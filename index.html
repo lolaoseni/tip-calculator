@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <title> SPLITTER | Tip calculator app</title>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <div class="logo-div"><img class=logo src="/images/logo.svg" alt="logo"></div>
+    </header>
+
+    <section class="container-wrapper">
+      <div class="container">
+        <div class="input-div">
+          <form action="#" id="inputForm">
+            <div class="bill-div">
+              <h2 class="section-text">Bill</h2>
+              <label for="bill">
+                <input class="bill-input" type="text" name="bill" id="bill">
+              </label>
+            </div>
+
+            <div class="select-tip-div">
+              <h2 class="section-text"> Select Tip %</h2>
+              <button class="tip-btn" id="btnTip5" value="5">5%</button>
+              <button class="tip-btn" id="btnTip10" value="10">10%</button>
+              <button class="tip-btn" id="btnTip15" value="15">15%</button>
+              <button class="tip-btn" id="btnTip25" value="25">25%</button>
+              <button class="tip-btn" id="btnTip50" value="50">50%</button>
+              <button class="tip-btn custom-btn">Custom</button>
+            </div>
+
+            <div class="bill-div num-of-people">
+              <h2 class="section-text">Number of People</h2>
+              <label for="people">
+                <input class="people-input" type="number" name="people" value="" id="numOfPeople">
+              </label>
+
+            </div>
+          </form>
+        </div>
+
+        <div class="display-div">
+          <div class="display-wrap">
+            <div class="tip-display">
+              <h4>Tip Amount</h4>
+              <p> / person</p>
+              <div class="tip-result">
+                <p>$ 4.7</p>
+              </div>
+            </div>
+
+            <div class="tip-display">
+              <h4>Total</h4>
+              <p> / person</p>
+              <div class="tip-result">
+                <p>$ 4.7</p>
+              </div>
+            </div>
+          </div>
+          <button type="reset">Reset</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
